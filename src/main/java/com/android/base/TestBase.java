@@ -68,7 +68,7 @@ public class TestBase {
 
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		String device = (String) prop.getProperty("device");
-	//	String device = System.getProperty("deviceName");   ---Use this to run from command line with maven and not passing value from config file
+	//	String device = System.getProperty("deviceName");  //Use this to run from command line with maven and not passing value from config file
 		if (device.contains("emulator")) {
 			startEmulator();
 		}

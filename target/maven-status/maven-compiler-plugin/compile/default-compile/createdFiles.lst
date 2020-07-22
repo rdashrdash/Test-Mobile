@@ -1,5 +1,2 @@
-com\android\util\TestUtil.class
-com\android\util\WebEventListener.class
-com\android\base\TestBase.class
 com\android\screen\AlarmScreen.class
 com\android\extentReportListener\ExtentReportListener.class

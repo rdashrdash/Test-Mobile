@@ -67,8 +67,8 @@ public class TestBase {
 	public static AndroidDriver<MobileElement> initialization() throws IOException, InterruptedException {
 
 		DesiredCapabilities capabilities = new DesiredCapabilities();
-		String device = (String) prop.getProperty("device");
-	//	String device = System.getProperty("deviceName");  //Use this to run from command line with maven and not passing value from config file
+	//	String device = (String) prop.getProperty("device"); // Use this to run from eclipse using device from config file
+		String device = System.getProperty("deviceName");  //Use this to run from command line with maven and by passing device/profile from CMD
 		if (device.contains("emulator")) {
 			startEmulator();
 		}

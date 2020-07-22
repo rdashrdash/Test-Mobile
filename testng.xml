@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Clock App Test">
+
+	<listeners>
+		<listener class-name="com.android.extentReportListener.ExtentReportListener" />
+		<listener class-name="com.android.util.WebEventListener" />
+	</listeners>
+
+	<test name="Clock Functions">
+		<classes>
+			<class name="com.android.test.SetAlarmTest"></class>
+		</classes>
+	</test>
+</suite>
